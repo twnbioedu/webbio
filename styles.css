@@ -1,0 +1,289 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-image: linear-gradient(to right, black 0%, black 100%);
+  }
+  
+  header .logo {
+    color: #e9ddf1;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    text-align: center;
+  }
+
+
+body {
+   background-image: url('BGR.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+ 
+  .black-rectangle {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+  }
+  
+  .top {
+    position: fixed;
+    top: 0;
+  }
+  
+  .bottom {
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .purple-box {
+    background-color: #e9ddf1;
+    border: 2px solid black;
+    border-radius: 100px;
+    padding: 20px;
+    margin: 60px auto 20px auto; /* Center the purple box horizontally */
+    max-width: 80%; /* Limit the width */
+  }
+  
+  .purple-box h1 {
+    text-align: center;
+    font-size: 2em; /* Larger font size */
+  }
+  
+  .purple-box p {
+    text-align: justify; /* Justify text */
+  }
+  
+  .pink-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .pink-box {
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: pink;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    overflow: hidden; /* Hide overflowing text */
+  }
+  
+  .background-images img {
+    position: absolute;
+    width: 200px;
+    opacity: 0.6;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .popup img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .footer-icons {
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-icons a {
+    margin-right: 20px;
+    color: #ffffff; /* Warna default untuk tautan */
+    text-decoration: none;
+  }
+  
+  .footer-icons a:hover {
+    color: #ffffff; /* Warna saat tautan dihover */
+  }
+  
+  
+  header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .youtube-video {
+    text-align: center;
+    background: #1c052200;
+  }
+
+  .additional-box {
+    width: 100%;    
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .sub-box1 {
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #d9d9d9;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-box2 {
+    margin: 60px auto 20px auto;
+    width: 200px;
+    height: 50px;
+    background-color: #d9d9d9;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background-images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-images {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.floating-image {
+  position: absolute;
+  width: 100px; /* Adjust the size as needed */
+  opacity: 0.6;
+  transition: transform 0.5s ease-in-out; /* Add smooth transition effect */
+}
+
+.image1 {
+  animation: sway1 3s ease-in-out infinite alternate;
+}
+
+.image2 {
+  animation: sway2 2s ease-in-out infinite alternate;
+}
+
+.image3 {
+  animation: sway3 4s ease-in-out infinite alternate;
+}
+
+.image4 {
+  animation: sway4 1.5s ease-in-out infinite alternate;
+}
+.image5 {
+  animation: sway5 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes sway1 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(20px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway2 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(15px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway3 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(25px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway4 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(10px); /* Adjust the sway amount as needed */
+  }
+}
+
+@keyframes sway5 {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(25px); /* Adjust the sway amount as needed */
+  }
+}
+
+/* Additional styles to adjust the initial positions */
+.image1 {
+  left: 100px;
+  top: 15px;
+}
+
+.image2 {
+  left: 750px;
+  top: 100px;
+}
+
+.image3 {
+  left: 5px;
+  top: 450px;
+}
+
+.image4 {
+  left: 350px;
+  top: 200px;
+}
+
+.image5 {
+  left: 1000px;
+  top: 300px;
+}
+
+  /* Add your existing styles here */
